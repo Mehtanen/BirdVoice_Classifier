@@ -1,7 +1,7 @@
 % Filewriter
 function new_class = FileWriter(pathTo,whatclass,amount_of_classes,lisattava)
     
-    if strcmp(whatclass,'ei asettunut') == 1   % jos ei ole asettunut luodaan uusi
+    if strcmp(whatclass,'ei asettunut') == 1   % if ei asettunut == true, create new
         new_class = createFolder(pathTo,amount_of_classes);       
         addToClass(pathTo,new_class,lisattava); 
     else
